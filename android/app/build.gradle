@@ -7,7 +7,7 @@ android {
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         def sysBuildNumber = System.getenv("CI_BUILD_ID")
-        versionCode "CI_BUILD_ID"
+        versionCode 9
         versionName "1.0." + sysBuildNumber
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
