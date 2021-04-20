@@ -149,6 +149,7 @@ jobs:
           build-type: release
           certificate: prod
           destinations: Playstore
+          native-config: android_deploy
           upload-artifact: android
           artifact-retention-days: 1
 
