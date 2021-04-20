@@ -135,7 +135,7 @@ jobs:
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.ACTION_MONITORING_SLACK }}
 
-  # Release Android build that deploys the .apk to Playstore
+  # Release Android build that deploys the .apk to Playstore.
 
   build-android-release-test:
     runs-on: ubuntu-latest
