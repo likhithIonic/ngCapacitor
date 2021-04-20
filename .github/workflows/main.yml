@@ -14,7 +14,7 @@ on:
 jobs:
   # This will build an IPA & Upload the artifact in iOS.zip
 
-  # artifacts will be saved only for 24hrs to save the space requirments for GH Actions
+  # artifacts will be saved only for 24hrs to save the space requirments for GH Actions.
 #   build-ios-dev-test:
 #     runs-on: ubuntu-latest
 #     steps:
