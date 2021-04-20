@@ -72,7 +72,7 @@ jobs:
           platform: iOS
           build-type: app-store
           certificate: ios_deploy
-          native-config: ios_prod
+          native-config: ios_deploy
           destinations: Appstore
           upload-artifact: ios
           artifact-retention-days: 1
