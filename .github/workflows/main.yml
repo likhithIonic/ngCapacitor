@@ -13,7 +13,6 @@ on:
 
 jobs:
   # This will build an IPA & Upload the artifact in iOS.zip
-
   # artifacts will be saved only for 24hrs to save the space requirments for GH Actions.
   build-ios-dev-test:
     runs-on: ubuntu-latest
@@ -29,7 +28,7 @@ jobs:
           native-config: ios_dev
           upload-artifact: IOS
           artifact-retention-days: 1
-# # custom slack action used to report in case of failure.
+# custom slack action used to report in case of failure.
       - name: Report Status
         if: always()
         uses: likhith99/notify-slack-action@master
@@ -38,7 +37,8 @@ jobs:
           notify_when: 'failure'
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.ACTION_MONITORING_SLACK }}
-#web build job
+# web build job
+
   build-web-test:
     runs-on: ubuntu-latest
     steps:
