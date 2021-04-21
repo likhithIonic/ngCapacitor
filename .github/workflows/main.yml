@@ -87,7 +87,7 @@ jobs:
 
 
 
-  # build-ios-enterprise-test:
+  build-ios-enterprise-test:
     runs-on: ubuntu-latest
     steps:
       - name: Angular Capacitor Appstore iOS
