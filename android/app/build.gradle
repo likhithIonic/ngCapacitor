@@ -6,7 +6,7 @@ android {
         applicationId "io.ionic.starter"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        def sysBuildNumber = System.getenv("CI_BUILD_ID")
+        def sysBuildNumber = System.getenv("CI_BUILD_NUMBER")
         versionCode Integer.valueOf(sysBuildNumber)
         versionName "1.0." + sysBuildNumber
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
