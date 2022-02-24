@@ -54,7 +54,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     guard let touchPoint = event?.allTouches?.first?.location(in: self.window) else { return }
 
     if statusBarRect.contains(touchPoint) {
-      NotificationCenter.default.post(CAPBridge.statusBarTappedNotification)
+      NotificationCenter.default.post(name: .capacitorStatusBarTapped, object: nil)
     }
   }
 }
