@@ -2,9 +2,5 @@
 	"appId": "io.ionic.starter",
 	"appName": "ngcap",
 	"webDir": "www",
-	"plugins": {
-		"SplashScreen": {
-			"launchShowDuration": 0
-		}
-	}
+	"bundledWebRuntime": false
 }
